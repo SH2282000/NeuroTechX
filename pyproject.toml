@@ -5,9 +5,12 @@ description = ""
 authors = ["Shannah <shannah.santucci@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.8,<3.11"
 keras = "^2.10.0"
 jupyterlab = "^3.5.0"
+tensorflow-macos = "^2.10.0"
+matplotlib = "^3.6.1"
+pyxdf = "^1.16.3"
 
 [tool.poetry.dev-dependencies]
 
