@@ -10,7 +10,18 @@ keras = "^2.10.0"
 jupyterlab = "^3.5.0"
 matplotlib = "^3.6.1"
 pyxdf = "^1.16.3"
-tensorflow-macos = {version = "^2.10.0", platform = "macos"}
+tensorflow-macos = "^2.10.0"
+pyOpenBCI = "^0.13"
+pylsl = "^1.16.0"
+pyserial = "^3.5"
+xmltodict = "^0.13.0"
+brainflow = "^5.3.0"
+pandas = "^1.5.1"
+tk = "^0.1.0"
+Flask = "^2.2.2"
+mido = "^1.2.10"
+Turbo-Flask = "^0.8.3"
+rtmidi = "^2.3.4"
 
 [tool.poetry.dev-dependencies]
 
