@@ -20,6 +20,8 @@ pandas = "^1.5.1"
 tk = "^0.1.0"
 Flask = "^2.2.2"
 mido = "^1.2.10"
+Turbo-Flask = "^0.8.3"
+rtmidi = "^2.3.4"
 
 [tool.poetry.dev-dependencies]
 
