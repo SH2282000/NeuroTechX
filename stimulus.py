@@ -1,17 +1,13 @@
-import threading
 import time
 
 import mido as mido
 import numpy as np
-from flask import Blueprint
 from pylsl import StreamInfo, StreamOutlet
-from turbo_flask import Turbo
 
 from frontend import create_app
-import frontend
 
 # app = create_app()
-# turbo = Turbo(app)
+
 
 def main():
     info_stimulus = StreamInfo('OpenBCIStimulus', 'Markers', 9, 0, 'string', 'myuidw43536')
@@ -106,4 +102,5 @@ def main():
 
 
 if __name__ == "__main__":
+    # app.run(debug=True)
     main()
