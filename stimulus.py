@@ -1,28 +1,15 @@
+import time
+
 import mido as mido
 import numpy as np
 from pylsl import StreamInfo, StreamOutlet
-import time
 
-import tkinter as tk
+from frontend import create_app
 
-class MyPopup(object):
+app = create_app()
 
-    def __init__(self, parent=None):
-        self.root = tk.Tk()
-        self.root.geometry('200x100')
-        self.root.title('Hello World')
-        self.parent = parent
-        self.my_label = tk.Label(self.root, text="I'm a popup")
-        self.my_label.pack()
-
-    def show(self):
-        self.root.mainloop()
 
 def main():
-    root = tk.Tk()
-    root.geometry("250x170")
-
-
     info_stimulus = StreamInfo('OpenBCIStimulus', 'Markers', 9, 0, 'string', 'myuidw43536')
 
     outlet_sti = StreamOutlet(info_stimulus)
@@ -73,7 +60,6 @@ def main():
     print(mido.get_output_names())
     midi_device = mido.get_output_names()[0]
     midi_out = mido.open_output(midi_device)
-    tk.mainloop()
 
     def sequencer_callback(time, pitch, velocity, debug=False):
         if debug:
@@ -95,10 +81,9 @@ def main():
         t = 0.0
         tempo = init_tempo
         velocity = int(init_velocity)
-
-        T = tk.Text(root, height=5, width=52)
-        l = tk.Label(root, text=f'{task_labels[task_kind][task]}')
-
+        
+        print(f'{task_labels[task_kind][task]}')
+        
         while t < trial_duration:
 
 
@@ -114,3 +99,7 @@ def main():
             t += 1 / tempo
 
         time.sleep(1)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)

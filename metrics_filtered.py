@@ -31,7 +31,7 @@ def main():
     df = pd.DataFrame(np.transpose(data))
     plt.figure()
     df[eeg_channels].plot(subplots=True)
-    plt.savefig('before_processing.png')
+    plt.savefig('visuals/before_processing.png')
 
     # for demo apply different filters to different channels, in production choose one
     for count, channel in enumerate(eeg_channels):
@@ -57,7 +57,7 @@ def main():
     df = pd.DataFrame(np.transpose(data))
     plt.figure()
     df[eeg_channels].plot(subplots=True)
-    plt.savefig('after_processing.png')
+    plt.savefig('visuals/after_processing.png')
 
 
 if __name__ == "__main__":
