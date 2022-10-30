@@ -6,13 +6,8 @@ from pylsl import StreamInfo, StreamOutlet
 
 from frontend import create_app
 
-<<<<<<< HEAD
-# app = create_app()
-
-=======
 app = create_app()
 # turbo = Turbo(app)
->>>>>>> 2b05f6c (Frontend)
 
 def main():
     info_stimulus = StreamInfo('OpenBCIStimulus', 'Markers', 9, 0, 'string', 'myuidw43536')
@@ -107,10 +102,5 @@ def main():
 
 
 if __name__ == "__main__":
-<<<<<<< HEAD
-    # app.run(debug=True)
-    main()
-=======
     app.run()
-    # main()
->>>>>>> 2b05f6c (Frontend)
+    main()

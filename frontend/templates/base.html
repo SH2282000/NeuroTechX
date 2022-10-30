@@ -16,10 +16,6 @@
     />
 
     <title>{% block title %}MindMusic{% endblock %}</title>
-<<<<<<< HEAD
-
-=======
->>>>>>> 2b05f6c (Frontend)
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -41,33 +37,26 @@
     </nav>
 
 
-    <div class="container">        
-        <img src="static/after_processing.png" class="rounded float-right">
-        <div>
-          <h1 class="p-3">MindMusic   <span class="badge badge-secondary">NeuroTechX</span></h1>
-          <div class="alert alert-info col-5" role="alert">
-              <strong>
-                  Instructions
-              </strong>
-              <p>
-                  {% block instruction %}
-                  {% endblock %}  
-              </p>
-          </div>
-          <p>
-              {% block content %}
-              {% endblock %}    
-          </p>
-
-          <div class="float-right">
-              <button type="button" class="btn btn-primary m-2">Record</button>
-              <button type="button" class="btn btn-secondary m-2">Train</button>                
-          </div>
+    <div class="container ">
+        <h1 class="p-3">MindMusic  <span class="badge badge-secondary">New</span></h1>
+        <div class="alert alert-info" role="alert">
+            <strong>
+                Instructions
+            </strong>
+            <p>
+                {% block instruction %}
+                {% endblock %}  
+            </p>
+        </div>
+        <p>
+            {% block content %}
+            {% endblock %}    
+        </p>
+        <div class="float-right">
+            <button type="button" class="btn btn-primary m-2">Record</button>
+            <button type="button" class="btn btn-secondary m-2">Train</button>                
         </div>
     </div>
-
-    
-    <!--<img src="static/screenshot.jpg" class="img-fluid" alt="Responsive image">-->
 
     <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
