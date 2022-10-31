@@ -36,14 +36,17 @@ To build the project go into **file** > **Build and Run** and select the destina
 Here's a **preview video** of the game running on a mac.
 <p align="center">
  <a href="https://youtu.be/vh3UYR2Gg8w">
-  <img width="460" height="300" src="">
+  <img width="782" alt="Screenshot 2022-10-31 at 09 22 20" src="https://user-images.githubusercontent.com/16389789/198963614-06b34207-708a-4e22-a88e-536ce1c10c05.png">
+
  </a>
 </p>
 
 ### Screenshots
 
+<img width="1262" alt="Screenshot 2022-10-31 at 09 20 47" src="https://user-images.githubusercontent.com/16389789/198963262-73e6b9cf-60b8-443f-887a-59a55c30a994.png">
+
+
 Highest enjoyment of music is experienced during an engaged state of flow. ​(Audio) feedback pulls one in.​ Let's make musical expression as accessible as music listening by letting the user focus on the music and leaving the performance technique to the system.​
-​
 
 We aim to convert EEG signals to performance control parameters which feed a real-time performance renderer, ideally using supervised training.​
 
